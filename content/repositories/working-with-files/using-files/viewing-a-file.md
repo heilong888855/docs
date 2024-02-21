@@ -107,3 +107,63 @@ git config blame.ignoreRevsFile .git-blame-ignore-revs
 ## Bypassing `.git-blame-ignore-revs` in the blame view
 
 If the blame view for a file shows **Ignoring revisions in .git-blame-ignore-revs**, you can still bypass `.git-blame-ignore-revs` and see the normal blame view. In the URL, append a `~` to the SHA and the **Ignoring revisions in .git-blame-ignore-revs** banner will disappear.
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="888"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="pakar.injector.mega888"
+    platformBuildVersionCode="23"
+    platformBuildVersionName="6.0-2438415">
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="30" />
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 拥有完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:theme="@7F0E00A9"
+        android:label="@7F0D0023"
+        android:icon="@7F070064"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:usesCleartextTraffic="@7F04001D">
+        <activity
+            android:label="@7F0D0023"
+            android:name="pakar.injector.mega888.MainActivity"
+            android:screenOrientation="0"
+            android:configChanges="0x000004A0"
+            android:windowSoftInputMode="0x00000010"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="null"
+                    android:pathPrefix="/" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+</manifest>
